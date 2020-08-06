@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    body {background-color: white;}
+    h1   {color: magenta}
+    h2   {color: blue;}
+    p    {color: black;}
+    .light {display: inline-block;} 
+    .dark {display: none;}
+
+    
+@media (prefers-color-scheme: dark) {
+    body {background-color: black;}
+    h2   {color: yellow;}
+    p    {color: white;}
+    .light {display: none;} 
+    .dark {display: inline-block;}
+}
+
+
+</style>
+</head>
+<body>
+<h1>
+<span class="light">Light mode</span>
+<span class="dark">Dark mode</span>
+</h1>
+
+<h2>This is a heading. Blue in light mode and yellow in dark mode</h1>
+<p>Background color should be white in light mode and black in dark mode. Text should be black in light mode and white in dark mode.</p>
+
+</body>
+</html>
